@@ -5,7 +5,7 @@ function App() {
     <div >
      <h1>Hello</h1>
      <p> Welcome to pronect community hey! </p>
-     <p>Pronect....</p>
+     <p>Pronect..</p>
     </div>
   );
 }
