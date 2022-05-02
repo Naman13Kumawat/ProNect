@@ -1,0 +1,13 @@
+.featured{
+    padding:4rem 0;
+    text-align:center;
+}
+
+.featured h1{
+    margin-bottom: 4rem;
+}
+
+.c_car{
+    width:90%;
+    margin: auto;
+}

@@ -1,0 +1,23 @@
+.explore{
+	background: linear-gradient(-45deg, #8E05C2, #700B97, #3E065F, #000000);
+    text-align: center;
+    padding:5rem;
+}
+
+.explore h1{
+    color:#fff;
+}
+
+.c_card{
+    margin: 3rem 2rem;
+    border-radius: 20px;
+    width: 15rem;
+    height: 15rem;
+    padding:2rem;
+}
+
+
+.c_cardGroup{
+    width: 90%;
+    margin:auto;
+}

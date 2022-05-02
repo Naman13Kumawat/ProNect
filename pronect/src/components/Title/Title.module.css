@@ -1,0 +1,40 @@
+.title h1{
+    padding-top:9rem;
+}
+
+.title p{
+    padding-top:1rem;
+}
+
+.title a{
+    margin:0 1rem;
+}
+
+.title{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding-top:2rem;
+    color: #fff;
+	background: linear-gradient(-45deg, #8E05C2, #700B97, #3E065F, #000000);
+	/* background: linear-gradient(-45deg, #BC6FF1, #892CDC, #52057B, #000000); */
+}
+
+.brand{
+    font-size:3.5rem;
+    font-weight: bold;
+}
+
+.c_btn{
+    margin: 6rem 2rem;
+}
+
+.c_btn_connect{
+    position: fixed;
+    background-color: #00498d;
+    color:#fff;
+    border:none;
+    right: 0;
+    z-index: 10;
+    top:40%;
+}
+

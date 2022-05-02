@@ -1,0 +1,44 @@
+.graphic {
+  background-color: #fff;
+  padding: 7rem;
+  margin-bottom: 16rem;
+  text-align: center;
+}
+
+.c_cardGroupImg {
+  padding: 3rem;
+  border: none;
+}
+
+.c_card{
+    border: none;
+}
+
+.image1 {
+  background-image: linear-gradient(0, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+    url("/public/images/get_sponsor.jpg");
+  height: 17rem;
+  background-size: cover;
+  padding: 3rem;
+  margin: 0 1rem;
+}
+
+.image2 {
+  background-image: linear-gradient(0, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+    url("/public/images/pitch.jpg");
+  height: 17rem;
+  background-size: cover;
+  margin: 0 1rem;
+  padding: 3rem;
+
+}
+
+.image3 {
+  background-image: linear-gradient(0, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+    url("/public/images/opportunity.jpg");
+  height: 17rem;
+  background-size: cover;
+  margin: 0 1rem;
+  padding: 3rem;
+
+}
