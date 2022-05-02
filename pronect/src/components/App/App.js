@@ -6,6 +6,8 @@ import Featured from "../Featured/Featured"
 import Explore from "../Explore/Explore"
 import Graphic from "../Graphic/Graphic"
 
+import Footer from "../Footer/Footer"
+
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
     <Featured />
     <Explore />
     <Graphic />
+    
+    <Footer />
     </div>
   );
 }

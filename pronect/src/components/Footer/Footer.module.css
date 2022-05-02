@@ -1,0 +1,71 @@
+.footer {
+  margin: 5% auto 0;
+}
+
+.footer h1{
+    font-size:4rem;
+    font-weight:bold;
+    padding:3rem 0 0 ;
+}
+
+.footer h4{
+    font-weight: 600;
+}
+
+.footer .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  height: 100%;
+}
+
+footer {
+  position: relative;
+  background: linear-gradient(-45deg, #8e05c2, #700b97, #3e065f, #000000);
+  color:#fff;
+  padding: 5rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 2em;
+}
+
+footer ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer li {
+  display: inline-block;
+}
+
+.c_col a {
+  color: rgba(255, 255, 255, 0.55);
+  transition: color 0.15s ease-in-out;
+}
+
+.c_col a:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+footer i {
+  margin: 0 1rem 0 0;
+}
+
+.c_col {
+  height: 100%;
+}
+
+.c_row {
+  width: 100%;
+}
+
+footer p {
+  opacity: 20%;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  left: 1rem;
+}
