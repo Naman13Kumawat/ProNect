@@ -4,10 +4,9 @@ import styles from "./Testimonial.module.css";
 
 export default function Testimonial() {
   return (
-    <div className={`${styles.Testimonial}`}>
-      <Container fluid>
+    <div className={`${styles.testimonial}`}>
         <h1>Testimonials</h1>
-        <Row xs="auto" md={4} className={`${styles.c_cardGroup} g-4`}>
+        <Row xs="auto" xxl={4} className={`${styles.c_cardGroup} g-4`}>
           <Col>
             <Card className={`${styles.c_card}`}>
               <Card.Body>
@@ -51,7 +50,6 @@ export default function Testimonial() {
             </Card>
           </Col>
         </Row>
-      </Container>
     </div>
   );
 }
