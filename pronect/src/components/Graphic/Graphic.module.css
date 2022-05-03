@@ -15,7 +15,7 @@
 }
 
 .image1 {
-  background-image: linear-gradient(0, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+  background-image: linear-gradient(0, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
     url("/public/images/get_sponsor.jpg");
   height: 17rem;
   background-size: cover;
@@ -24,7 +24,7 @@
 }
 
 .image2 {
-  background-image: linear-gradient(0, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+  background-image: linear-gradient(0, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
     url("/public/images/pitch.jpg");
   height: 17rem;
   background-size: cover;
@@ -34,11 +34,18 @@
 }
 
 .image3 {
-  background-image: linear-gradient(0, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+  background-image: linear-gradient(0, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
     url("/public/images/opportunity.jpg");
   height: 17rem;
   background-size: cover;
   margin: 0 1rem;
   padding: 3rem;
 
+}
+
+
+@media screen and (max-width: 1400px){
+  .graphic{
+    display:none;
+  }
 }

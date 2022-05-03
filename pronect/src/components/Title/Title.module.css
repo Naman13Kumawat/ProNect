@@ -38,3 +38,13 @@
     top:40%;
 }
 
+
+@media screen and (max-width: 475px) {
+    .c_btn{
+        margin: 2rem 1rem;
+    }
+
+    .title h1{
+        padding-top:0;
+    }
+}

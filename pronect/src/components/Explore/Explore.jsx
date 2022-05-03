@@ -4,10 +4,10 @@ import styles from "./Explore.module.css";
 
 export default function Explore() {
   return (
-    <div className={`${styles.explore}`}>
+    <div id="explore" className={`${styles.explore}`}>
       <Container fluid>
         <h1>Explore ProNect</h1>
-        <Row xs="auto" md={4} className={`${styles.c_cardGroup} g-4`}>
+        <Row xs="auto" xxl={4} className={`${styles.c_cardGroup} g-4`}>
           <Col>
             <Card className={`${styles.c_card}`}>
               <Card.Body>

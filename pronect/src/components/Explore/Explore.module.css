@@ -9,15 +9,42 @@
 }
 
 .c_card{
-    margin: 3rem 2rem;
+    margin: 3rem 0;
     border-radius: 20px;
     width: 15rem;
     height: 15rem;
     padding:2rem;
 }
 
+Col{
+    width: fit-content;
+    margin:auto;
+}
+
 
 .c_cardGroup{
     width: 90%;
     margin:auto;
+    justify-content: center;
+}
+
+
+@media screen and (max-width:1400px) {
+    .c_card{
+        margin: 1rem 0;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .c_card{
+        margin: 1rem 0;
+    }
+
+    .explore{
+        padding:0;
+    }
+
+    .explore h1{
+        padding-top:1rem
+    }
 }
