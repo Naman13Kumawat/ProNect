@@ -1,4 +1,4 @@
-.title h1{
+.title_heading{
     padding-top:9rem;
 }
 
@@ -15,9 +15,23 @@
     text-align: center;
     padding-top:2rem;
     color: #fff;
-	background: linear-gradient(-45deg, #8E05C2, #700B97, #3E065F, #000000);
-	/* background: linear-gradient(-45deg, #BC6FF1, #892CDC, #52057B, #000000); */
+    background: linear-gradient(-45deg, #FA58B6, #7A0BC0, #270082, #1A1A40);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
 .brand{
     font-size:3.5rem;

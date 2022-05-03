@@ -1,10 +1,29 @@
-import React  from "react";
-import { Navbar, Container, Nav, Button } from "react-bootstrap";
-import styles from "./Title.module.css";
+import React, { useState } from "react"
+import { Navbar, Container, Nav, Button } from "react-bootstrap"
+import styles from "./Title.module.css"
+import Login from "../Form/Login/Login" 
+import Sign from "../Form/Sign/Sign" 
 
 export default function Title() {
+  const [isActive1, setActive1] = useState(false);
+  const [isActive2, setActive2] = useState(false);
+  const handleToggle1 = () => {
+    setActive1(!isActive1);
+    if(isActive2 === true) {
+      setActive2(!isActive2);
+    }
+  };
+  const handleToggle2 = () => {
+    setActive2(!isActive2);
+    if(isActive1 === true) {
+      setActive1(!isActive1);
+    }
+  };
+
   return (
     <div className={styles.title} id="#home">
+    <Login bool={isActive1} />
+    <Sign bool={isActive2} />
       <Navbar collapseOnSelect expand="lg" variant="dark">
         <Container>
           <Navbar.Brand className={styles.brand} href="#home">
@@ -15,16 +34,24 @@ export default function Title() {
             <Nav className="ms-auto">
               <Nav.Link href="#home">Home</Nav.Link>
               <Nav.Link href="#explore">About Us</Nav.Link>
-              <Nav.Link href="#deets">Login / Sign Up</Nav.Link>
+              <Nav.Link onClick={handleToggle1}>Login</Nav.Link>
+              <Nav.Link onClick={handleToggle2}>Sign Up</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <h1>Find Sponsorship Opportunities</h1>
+      <h1 className={`${styles.title_heading}`}>Find Sponsorship Opportunities</h1>
       <p>Connecting creators with the companies looking to sponsor them</p>
-      <Button className={styles.c_btn} variant="outline-light" size="lg">Be a Sponsor</Button>{" "}
-      <Button className={styles.c_btn} variant="outline-light" size="lg">Get a Sponsor</Button>
-      <Button className={styles.c_btn_connect} variant="info" size="lg">Connect</Button>
+      <Button className={styles.c_btn} variant="outline-light" size="lg">
+        Be a Sponsor
+      </Button>{" "}
+      <Button className={styles.c_btn} variant="outline-light" size="lg">
+        Get Sponsors
+      </Button>
+      <Button className={styles.c_btn_connect} variant="info" size="lg">
+        Connect
+      </Button>
     </div>
   );
 }
+

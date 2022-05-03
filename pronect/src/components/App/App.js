@@ -11,14 +11,14 @@ import Footer from "../Footer/Footer"
 
 function App() {
   return (
-    <div>
+    <>
     <Title />
     <Featured />
     <Explore />
     <Graphic />
     <Testimonial />
     <Footer />
-    </div>
+    </>
   );
 }
 
