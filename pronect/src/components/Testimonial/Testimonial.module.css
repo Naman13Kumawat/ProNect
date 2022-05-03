@@ -1,8 +1,21 @@
 .testimonial{
-	background: linear-gradient(-45deg, #8E05C2, #700B97, #3E065F, #000000);
     text-align: center;
     padding:5rem;
-    margin-top: 3rem; 
+    margin-top: 3rem; background: linear-gradient(-45deg, #FA58B6, #7A0BC0, #270082, #1A1A40);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .testimonial h1{

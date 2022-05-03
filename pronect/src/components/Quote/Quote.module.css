@@ -1,14 +1,10 @@
-.Quote{
-	
-    background-color: #fff;
+.Quote {
+  background-color: #fff;
   padding: 7rem;
-  margin-bottom: 16rem;
   text-align: center;
-
 }
 
-.Quote h1{
-    color:black;
-    font-family: 'Caveat', cursive;
+.Quote h1 {
+  color: black;
+  font-family: "Caveat", cursive;
 }
-

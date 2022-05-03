@@ -1,51 +1,49 @@
 .graphic {
   background-color: #fff;
-  padding: 7rem;
-  margin-bottom: 16rem;
   text-align: center;
+  color: #fff;
+  display:flex;
+  justify-content: center;
+  margin: 3rem 3rem;
+  flex: 0 0 auto;
 }
 
-.c_cardGroupImg {
-  padding: 3rem;
-  border: none;
-}
-
-.c_card{
-    border: none;
+.imgCard{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  border-radius:20px;
+  padding:2%;
+  /* background-size: 100% 100%; */
+  background-size: cover;
+  margin:2rem;
+  height:20rem;
+  width:40rem;
 }
 
 .image1 {
   background-image: linear-gradient(0, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
     url("/public/images/get_sponsor.jpg");
-  height: 17rem;
-  background-size: cover;
-  padding: 3rem;
-  margin: 0 1rem;
 }
 
 .image2 {
   background-image: linear-gradient(0, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
     url("/public/images/pitch.jpg");
-  height: 17rem;
-  background-size: cover;
-  margin: 0 1rem;
-  padding: 3rem;
-
 }
 
 .image3 {
   background-image: linear-gradient(0, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
     url("/public/images/opportunity.jpg");
-  height: 17rem;
-  background-size: cover;
-  margin: 0 1rem;
-  padding: 3rem;
-
 }
 
 
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1024px) {
   .graphic{
-    display:none;
+    flex-wrap: wrap;
+    margin:3rem 1rem; 
+  } 
+
+  .imgCard{
+    height: 18rem;
   }
 }

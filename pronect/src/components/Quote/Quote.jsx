@@ -5,9 +5,8 @@ import styles from "./Quote.module.css";
 export default function Quote() {
   return (
     <div className={`${styles.Quote}`}>
-      <Container fluid>
+      <Container>
         <h1>IF YOU LIKE TO SPONSOR CURRENT EVENTS, CALL US!</h1>
-       
       </Container>
     </div>
   );
