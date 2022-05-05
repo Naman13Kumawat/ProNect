@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Footer.module.css";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -7,9 +8,9 @@ export default function Footer() {
       <footer>
         <div className={styles.container}>
           <div className={`${styles.grid} ${styles.c_row}`}>
-          <div className={styles.c_col}>
-              <h1>ProNect</h1>
-          </div>
+            <div className={styles.c_col}>
+              <h1>ProNect</h1>{" "}
+            </div>
             <div className={styles.c_col}>
               <ul>
                 <h4>Useful Links</h4>
@@ -21,9 +22,11 @@ export default function Footer() {
                   <li>FAQ's</li>
                 </a>
                 <br />
+                <Link to="event_cp">
                 <a href="#">
                   <li>Connect</li>
                 </a>
+                </Link>
                 <br />
                 <a href="#">
                   <li>Login / Sign Up</li>
