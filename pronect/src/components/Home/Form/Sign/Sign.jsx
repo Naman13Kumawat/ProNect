@@ -1,18 +1,16 @@
-import React from "react";
-import { FloatingLabel, Form, Button } from "react-bootstrap";
+import React, {useState} from "react";
+import { FloatingLabel, Form, Button, ButtonGroup, ToggleButton } from "react-bootstrap";
 import styles from "./Sign.module.css";
 
 export default function Sign(props) {
   return (
-    <div className={`${styles.sign} ${props.bool ? styles.active : null}`}>
-      <h1>
-        <a href="">Sign Up</a>
-      </h1>
+    <div className={`${styles.sign} ${props.bool ? styles.active : null} ${props.bool2 ? styles.active2 : null}`}>
+      <h1>Sign Up</h1>
       <Form.Label>What do you want to do?</Form.Label>
-      <Form.Select defaultValue="Choose...">
-        <option>Choose...</option>
-        <option>Get Sponsors</option>
-        <option>Sponsor an Event</option>
+      <Form.Select aria-label="Default select example"  className={`${styles.c_form}`}>
+        <option>Choose..</option>
+        <option value="1">Get Sponsors</option>
+        <option value="2">Be a Sponsor</option>
       </Form.Select>
       <FloatingLabel
         controlId="floatingInput"

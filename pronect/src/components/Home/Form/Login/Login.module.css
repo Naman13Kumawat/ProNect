@@ -1,6 +1,6 @@
 
-.sign{
-    color: #000;
+.login{
+    color: #fff;
     padding:2rem;
     justify-content:center;
     text-align:center;
@@ -14,32 +14,28 @@
     transition: all 0.5s ease-in-out;
 }
 
-.sign.active{
+.login.active{
     position: absolute;
     left: 0;
 }
 
-.sign h1 a{
+.login h1{
     color: rgba(255, 255, 255, 0.55);
     font-size:1.5rem;
     font-weight:300;
     transition: color 0.15s ease-in-out;
 }
 
-.sign h1 a:hover {
+.login h1:hover {
     color: rgba(255, 255, 255, 0.9);
-}
-
-.sign h1 a.active{
-    color: #fff;
 }
 
 .c_form{
     width: 50%;
+    color:#000;
     margin: 3rem auto;
 }
 
 .c_form_btn{
     margin: 2rem auto;
 }
-

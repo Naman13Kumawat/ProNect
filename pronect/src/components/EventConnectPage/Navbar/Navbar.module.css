@@ -1,16 +1,12 @@
-.Navbar_heading{
-    padding-top:9rem;
-}
-
-.Navbar p{
+.eventNavbar p{
     padding-top:1rem;
 }
 
-.Navbar a{
+.eventNavbar a{
     margin:0 1rem;
 }
 
-.Navbar{
+.eventNavbar{
     font-family: "Montserrat", sans-serif;
     text-align: center;
     padding-top:2rem;
@@ -42,9 +38,5 @@
 
 
 @media screen and (max-width: 475px) {
-   
 
-    .title h1{
-        padding-top:0;
-    }
 }

@@ -1,10 +1,10 @@
 import React, { useState } from "react"
 import { Navbar, Container, Nav, Button } from "react-bootstrap"
 import styles from "./Navbar.module.css"
-import Login from "../Form/Login/Login" 
-import Sign from "../Form/Sign/Sign" 
+import Login from "../../Home/Form/Login/Login" 
+import Sign from "../../Home/Form/Sign/Sign" 
 
-export default function Navbar() {
+export default function EventNav() {
   const [isActive1, setActive1] = useState(false);
   const [isActive2, setActive2] = useState(false);
   const handleToggle1 = () => {
@@ -21,7 +21,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className={styles.Navbar} id="#home">
+    <div className={styles.eventNavbar} id="#home">
     <Login bool={isActive1} />
     <Sign bool={isActive2} />
       <Navbar collapseOnSelect expand="lg" variant="dark">

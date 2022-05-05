@@ -1,6 +1,6 @@
 
-.login{
-    color: #000;
+.sign{
+    color: #fff;
     padding:2rem;
     justify-content:center;
     text-align:center;
@@ -10,36 +10,39 @@
     z-index: 2;
     height: 200vh;
     width: 50vw;
-    /* background-color:rgb(0 ,0 ,0 , 0.9); */
-	background: linear-gradient(to top,rgba(0,0,0,0), rgba(0,0,0,1));
+	/* background: linear-gradient(to top,rgba(0,0,0,0), rgba(0,0,0,1)); */
+    background-color: #000;
     transition: all 0.5s ease-in-out;
 }
 
-.login.active{
+.sign.active{
     position: absolute;
     left: 0;
 }
 
-.login h1 a{
+.sign.active2{
+    position: absolute;
+    left: 0;
+}
+
+.sign h1{
     color: rgba(255, 255, 255, 0.55);
     font-size:1.5rem;
     font-weight:300;
     transition: color 0.15s ease-in-out;
 }
 
-.login h1 a:hover {
+.sign h1:hover {
     color: rgba(255, 255, 255, 0.9);
-}
-
-.login h1 a.active{
-    color: #fff;
 }
 
 .c_form{
     width: 50%;
+    color: #000;
     margin: 3rem auto;
 }
 
 .c_form_btn{
     margin: 2rem auto;
 }
+
