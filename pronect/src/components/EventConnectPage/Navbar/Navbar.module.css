@@ -1,0 +1,50 @@
+.Navbar_heading{
+    padding-top:9rem;
+}
+
+.Navbar p{
+    padding-top:1rem;
+}
+
+.Navbar a{
+    margin:0 1rem;
+}
+
+.Navbar{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding-top:2rem;
+    color: #fff;
+    background: linear-gradient(-45deg, #FA58B6, #7A0BC0, #270082, #1A1A40);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.brand{
+    font-size:3.5rem;
+    font-weight: bold;
+}
+
+
+
+
+@media screen and (max-width: 475px) {
+   
+
+    .title h1{
+        padding-top:0;
+    }
+}
