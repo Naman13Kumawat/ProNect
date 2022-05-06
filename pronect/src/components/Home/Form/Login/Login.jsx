@@ -15,7 +15,7 @@ export default function Login(props) {
       <Sign bool2={isActive} />
       <h1>Login</h1>
       <FloatingLabel
-        controlId="floatingInput"
+        controlId="floatingInput2"
         label="Email address"
         className={`${styles.c_form} mb-3`}
       >
@@ -23,7 +23,7 @@ export default function Login(props) {
       </FloatingLabel>
       <FloatingLabel
         className={`${styles.c_form} mb-3`}
-        controlId="floatingPassword"
+        controlId="floatingPassword2"
         label="Password"
       >
         <Form.Control type="password" placeholder="Password" />

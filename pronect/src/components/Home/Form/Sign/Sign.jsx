@@ -13,7 +13,7 @@ export default function Sign(props) {
         <option value="2">Be a Sponsor</option>
       </Form.Select>
       <FloatingLabel
-        controlId="floatingInput"
+        controlId="floatingInput1"
         label="Email address"
         className={`${styles.c_form} mb-3`}
       >
@@ -21,7 +21,7 @@ export default function Sign(props) {
       </FloatingLabel>
       <FloatingLabel
         className={`${styles.c_form} mb-3`}
-        controlId="floatingPassword"
+        controlId="floatingPassword1"
         label="Password"
       >
         <Form.Control type="password" placeholder="Password" />

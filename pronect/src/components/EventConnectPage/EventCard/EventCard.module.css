@@ -1,0 +1,17 @@
+.eventCard{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    width:80vw;
+    margin:auto;
+    margin-top:2rem;
+
+}
+
+.c_card{
+    margin: 1rem;
+}
+
+.card_btn{
+    width:fit-content;
+    margin: auto;
+}

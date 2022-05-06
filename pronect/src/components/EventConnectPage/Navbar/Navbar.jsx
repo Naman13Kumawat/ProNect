@@ -35,8 +35,8 @@ export default function EventNav() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">
-              <Link to="/">
-              <Nav.Link href="">Home</Nav.Link>
+            <Link to="/">
+              <Nav.Link href="#">Home</Nav.Link>
               </Link>
               <Link to="/">
               <Nav.Link href="#explore">About Us</Nav.Link>
