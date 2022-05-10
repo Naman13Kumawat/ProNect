@@ -1,0 +1,8 @@
+.btn_box{
+    width:fit-content;
+    margin: auto;
+}
+
+.btn_box button{
+    margin: 1rem;
+}

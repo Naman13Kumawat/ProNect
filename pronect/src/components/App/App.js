@@ -12,7 +12,8 @@ function App() {
     <>
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/event_cp" element={<SponsorCP />} />
+      <Route path="/event_cp" element={<EventCP />} />
+      <Route path="/sponsor_cp" element={<SponsorCP />} />
     </Routes>
     </>
   );

@@ -3,9 +3,14 @@ import { FloatingLabel, Form, Button, ButtonGroup, ToggleButton } from "react-bo
 import styles from "./Sign.module.css";
 
 export default function Sign(props) {
+  const handleToggle = () => {
+    document.getElementById("signup").classList.toggle(`${styles.active}`);
+  };
+  
   return (
-    <div className={`${styles.sign} ${props.bool ? styles.active : null} ${props.bool2 ? styles.active2 : null}`}>
+    <div id="signup" className={`${styles.sign} ${props.bool ? styles.active : null} ${props.bool2 ? styles.active2 : null}`}>
       <h1>Sign Up</h1>
+      <button className={`${styles.cross_btn}`} onClick={handleToggle}></button>
       <Form.Label>What do you want to do?</Form.Label>
       <Form.Select aria-label="Default select example"  className={`${styles.c_form}`}>
         <option>Choose..</option>

@@ -1,19 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 import { FloatingLabel, Form, Button } from "react-bootstrap";
 import styles from "./Login.module.css";
-import Sign from "../Sign/Sign";
+import sign_styles from "../Sign/Sign.module.css";
 
 export default function Login(props) {
-
-  const [isActive, setActive] = useState(false);
   const handleToggle = () => {
-    setActive(!isActive);
+    document.getElementById("login").classList.toggle(`${styles.active}`);
+  };
+  const handleToggle2 = () => {
+    document.getElementById("login").classList.toggle(`${styles.active}`);
+    document.getElementById("signup").classList.toggle(`${sign_styles.active}`);
   };
 
   return (
-    <div className={`${styles.login} ${props.bool? styles.active : null}`}>
-      <Sign bool2={isActive} />
+    <div
+      id="login"
+      className={`${styles.login} ${props.bool ? styles.active : null}`}
+    >
       <h1>Login</h1>
+      <button className={`${styles.cross_btn}`} onClick={handleToggle}></button>
       <FloatingLabel
         controlId="floatingInput2"
         label="Email address"
@@ -32,7 +37,7 @@ export default function Login(props) {
         Submit
       </Button>
       <p>New User?</p>
-      <a href="#" onClick={handleToggle}>
+      <a href="#" onClick={handleToggle2}>
         Sign Up
       </a>
     </div>

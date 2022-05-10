@@ -22,12 +22,6 @@ export default function Footer() {
                   <li>FAQ's</li>
                 </a>
                 <br />
-                <Link to="event_cp">
-                <a href="#">
-                  <li>Connect</li>
-                </a>
-                </Link>
-                <br />
                 <a href="#">
                   <li>Login / Sign Up</li>
                 </a>
