@@ -1,0 +1,39 @@
+.filter{
+    padding:4rem 0;
+    text-align:center;
+}
+
+.filter h1{
+    margin-bottom: 4rem;
+    background-color: black;
+    
+}
+
+.filter{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+	display: flex;
+    padding:2rem 6rem;
+	align-content: center;
+	justify-content:space-between;
+    color: #fff;
+    background: linear-gradient(-45deg, #FA58B6, #7A0BC0, #270082, #1A1A40);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@media screen and (max-width: 475px) {
+
+}
+
