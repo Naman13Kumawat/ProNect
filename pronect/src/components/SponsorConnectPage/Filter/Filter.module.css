@@ -15,7 +15,8 @@
 	display: flex;
     padding:2rem 6rem;
 	align-content: center;
-	justify-content:space-between;
+	justify-content:center;
+	gap:3rem;
     color: #fff;
     background: linear-gradient(-45deg, #FA58B6, #7A0BC0, #270082, #1A1A40);
 	background-size: 400% 400%;
@@ -33,7 +34,11 @@
 		background-position: 0% 50%;
 	}
 }
-@media screen and (max-width: 475px) {
 
+
+.search{
+	border: none;
+	border-radius: 5px;
+	padding: 0 0.5rem 0;
 }
 

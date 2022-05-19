@@ -6,9 +6,10 @@ export function FilterProvider({ children }) {
   const [themeValue, setTV] = useState("Theme");
   const [fundValue, setFV] = useState("Estimated Funding");
   const [footfallValue, setFFV] = useState("Footfall");
+  const [searchInput, setSI] = useState("");
   return (
     <FilterContext.Provider
-      value={{ themeValue, setTV, fundValue, setFV, footfallValue, setFFV }}
+      value={{ themeValue, setTV, fundValue, setFV, footfallValue, setFFV, searchInput, setSI}}
     >
       {children}
     </FilterContext.Provider>

@@ -3,7 +3,7 @@ import { FloatingLabel, Form, Button } from "react-bootstrap";
 import styles from "./Login.module.css";
 import sign_styles from "../Sign/Sign.module.css";
 
-export default function Login(props) {
+export default function Login() {
   const handleToggle = () => {
     document.getElementById("login").classList.toggle(`${styles.active}`);
   };
@@ -15,7 +15,7 @@ export default function Login(props) {
   return (
     <div
       id="login"
-      className={`${styles.login} ${props.bool ? styles.active : null}`}
+      className={`${styles.login}`}
     >
       <h1>Login</h1>
       <button className={`${styles.cross_btn}`} onClick={handleToggle}></button>
