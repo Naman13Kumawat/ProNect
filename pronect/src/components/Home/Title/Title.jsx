@@ -6,15 +6,22 @@ import login_styles from "../Form/Login/Login.module.css";
 import Sign from "../Form/Sign/Sign";
 import sign_styles from "../Form/Sign/Sign.module.css";
 import ESModal from "../ESModal/ESModal";
-import { Link } from "react-router-dom";
+
+import { useAuth } from "../../../hooks/useAuth";
 
 export default function Title() {
   const [modalShow, setModalShow] = React.useState(false);
+  const { logout, user } = useAuth();
   const handleToggle1 = () => {
     document.getElementById("login").classList.toggle(`${login_styles.active}`);
   };
   const handleToggle2 = () => {
     document.getElementById("signup").classList.toggle(`${sign_styles.active}`);
+  };
+  // Profile Tab
+  const handleToggle3 = () => {
+    // document.getElementById("signup").classList.toggle(`${sign_styles.active}`);
+    logout();
   };
 
   return (
@@ -31,12 +38,22 @@ export default function Title() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link href="#explore">About Us</Nav.Link>
-              <Nav.Link onClick={handleToggle1} value="login_btn">
-                Login
-              </Nav.Link>
-              <Nav.Link onClick={handleToggle2} value="sign_btn">
-                Sign Up
-              </Nav.Link>
+              {Object.keys(user).length !== 0 ? (
+                <>
+                  <Nav.Link onClick={handleToggle3} value="login_btn">
+                    Logout
+                  </Nav.Link>
+                </>
+              ) : (
+                <>
+                  <Nav.Link onClick={handleToggle1} value="login_btn">
+                    Login
+                  </Nav.Link>
+                  <Nav.Link onClick={handleToggle2} value="signin_btn">
+                    Sign Up
+                  </Nav.Link>
+                </>
+              )}
             </Nav>
           </Navbar.Collapse>
         </Container>
